@@ -42,7 +42,7 @@ class UserListView(generics.ListAPIView):
     queryset = CustomUser.objects.all()
     serializer_class = UserListSerializer
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['tech_stack', 'location']  # exact match filters
+    filterset_fields = ['tech_stack', 'location'] 
 
     def get_queryset(self):
         queryset = super().get_queryset()

@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'jobs',
     'users',
+    'tests',
     #third-party apps can be added here 
     'rest_framework',
     'rest_framework.authtoken',

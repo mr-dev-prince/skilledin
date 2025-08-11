@@ -13,7 +13,6 @@ class UserListSerializer(serializers.ModelSerializer):
         model = CustomUser
         fields = ['uuid', 'username', 'first_name', 'last_name', 'tech_stack', 'location', 'bio', 'profile_picture']
 
-
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=True, validators=[validate_password])
     password2 = serializers.CharField(write_only=True, required=True)
